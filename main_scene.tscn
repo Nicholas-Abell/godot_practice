@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://w8ynguuxoi1"]
+[gd_scene load_steps=4 format=3 uid="uid://w8ynguuxoi1"]
 
 [ext_resource type="PackedScene" uid="uid://depchoi3dqchb" path="res://player.tscn" id="1_cuspc"]
+[ext_resource type="PackedScene" uid="uid://s2nij8a6143n" path="res://characters/slime/mob.tscn" id="2_qwotw"]
 [ext_resource type="PackedScene" uid="uid://b5bpjvo2edkry" path="res://trees/pine_tree.tscn" id="2_ujo6l"]
 
 [node name="MainScene" type="Node2D"]
@@ -12,8 +13,11 @@ offset_top = -3014.0
 offset_right = 11002.0
 offset_bottom = 4184.0
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_cuspc")]
-position = Vector2(1219, 537)
+[node name="Player" parent="." instance=ExtResource("1_cuspc")]
+position = Vector2(503, 939)
+
+[node name="Mob" parent="." instance=ExtResource("2_qwotw")]
+position = Vector2(1070, 720)
 
 [node name="PineTree" parent="." instance=ExtResource("2_ujo6l")]
 position = Vector2(1287, 900)
