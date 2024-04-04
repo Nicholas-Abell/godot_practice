@@ -1,13 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://w8ynguuxoi1"]
 
-[ext_resource type="PackedScene" uid="uid://depchoi3dqchb" path="res://player.tscn" id="1_cuspc"]
+[ext_resource type="PackedScene" uid="uid://depchoi3dqchb" path="res://characters/player.tscn" id="1_cuspc"]
 [ext_resource type="PackedScene" uid="uid://s2nij8a6143n" path="res://characters/slime/mob.tscn" id="2_qwotw"]
 [ext_resource type="PackedScene" uid="uid://b5bpjvo2edkry" path="res://trees/pine_tree.tscn" id="2_ujo6l"]
 
 [node name="MainScene" type="Node2D"]
 y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 offset_left = -6387.0
 offset_top = -3014.0
 offset_right = 11002.0
